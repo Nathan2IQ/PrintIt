@@ -19,10 +19,23 @@ const slides = [
 
 const flecheGauche = document.querySelector('.arrow_left');
 const flecheDroite = document.querySelector('.arrow_right');
+const dots = document.querySelector('.dots');
+
+let currentSlide = 0;
+
+slides.forEach((slide, index) => {
+	const dot = document.createElement('div');
+	dot.classList.add('dot');
+	if (index === 0) {
+		dot.classList.add('dot_selected');
+	}
+	dots.appendChild(dot);
+})
 
 flecheGauche.addEventListener('click', () => {
 	console.log('fleche gauche');
 });
+
 flecheDroite.addEventListener('click', () => {
 	console.log('fleche droite');
 });
