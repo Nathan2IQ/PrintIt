@@ -19,7 +19,6 @@ const slides = [
 
 const flecheGauche = document.querySelector('.arrow_left');
 const flecheDroite = document.querySelector('.arrow_right');
-
 const dotsContainer = document.querySelector('.dots');
 
 
